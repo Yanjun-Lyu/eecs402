@@ -142,11 +142,11 @@ bool accrueInterest(
     << endl;  
   }
   else if(accrueOneMonthsInterest(balanceAmt,doPrintEachMonth)) 
-  //check if numMonth is valid. 
+  //check if balanceAmt is valid. 
   {
     for(int i = 0; i < numMonths - 1; i++) 
     //loop should be reduced once since interest 
-    //has been accumulated once when checking numMonth.
+    //has been accumulated once when checking balanceAmt above.
     {
       accrueOneMonthsInterest(balanceAmt,doPrintEachMonth);
     }
