@@ -14,15 +14,15 @@ const double MID_INTEREST_RATE = 0.00225;
 const double UPPER_INTEREST_RATE = 0.004;
 
 bool accrueInterest(
-    double &balanceAmt,
-    const int numMonths,
-    const bool doPrintEachMonth
-    );
+     double &balanceAmt,
+     const int numMonths,
+     const bool doPrintEachMonth
+     );
 
 bool accrueOneMonthsInterest(
-    double &balanceAmt,
-    const bool doPrintInfo
-    );
+     double &balanceAmt,
+     const bool doPrintInfo
+     );
 
 #ifdef ANDREW_TEST
 #include "andrewTest.h"
@@ -60,9 +60,9 @@ int main()
 #endif
 
 bool accrueOneMonthsInterest(
-    double &balanceAmt,
-    const bool doPrintInfo
-    )
+     double &balanceAmt,
+     const bool doPrintInfo
+     )
 {
   double interestAccrued;
   bool isOneMonthValid = false; //for checking if balanceAmt is valid.
@@ -125,10 +125,10 @@ bool accrueOneMonthsInterest(
 }
 
 bool accrueInterest(
-    double &balanceAmt,
-    const int numMonths,
-    const bool doPrintEachMonth
-    )
+     double &balanceAmt,
+     const int numMonths,
+     const bool doPrintEachMonth
+     )
 {
   double iniBalance = balanceAmt;
   double totalInterestAccrued;
@@ -158,6 +158,6 @@ bool accrueInterest(
     cout << "Final balance: " << balanceAmt << endl;
     isValid = true;
   }
-  
+
   return(isValid);
 }   
