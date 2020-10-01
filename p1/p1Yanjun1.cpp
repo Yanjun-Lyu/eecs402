@@ -13,12 +13,14 @@ const double LOWER_INTEREST_RATE = 0.0015;
 const double MID_INTEREST_RATE = 0.00225;
 const double UPPER_INTEREST_RATE = 0.004;
 
+//a function to accrue interest for several months
 bool accrueInterest(
      double &balanceAmt,
      const int numMonths,
      const bool doPrintEachMonth
      );
 
+//a function to accrue interest for one month at certain rate
 bool accrueOneMonthsInterest(
      double &balanceAmt,
      const bool doPrintInfo
